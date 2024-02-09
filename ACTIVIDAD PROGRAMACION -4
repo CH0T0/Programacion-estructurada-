@@ -1,0 +1,54 @@
+CICLO EN FOR 
+#include <stdio.h>
+
+int main() {
+    int n, f, f1 = -1, f2 = 1;
+    printf("Ingrese el número de términos: ");
+    scanf("%d", &n);
+
+    printf("La serie de Fibonacci es:\n");
+    for (int i = 0; i < n; ++i) {
+        f = f1 + f2;
+        f1 = f2;
+        f2 = f;
+        printf("%d ", f);
+    }
+
+    CICLO EN WHILE 
+#include <stdio.h>
+
+int main() {
+    int n, f, f1 = -1, f2 = 1;
+    printf("Ingrese el número de términos: ");
+    scanf("%d", &n);
+
+    printf("La serie de Fibonacci es:\n");
+    while (n > 0) {
+        f = f1 + f2;
+        f1 = f2;
+        f2 = f;
+        printf("%d ", f);
+        n--;
+    }
+
+    return 0;
+}
+CICLO EN DO-WHILE 
+#include <stdio.h>
+
+int main() {
+    int n, f, f1 = -1, f2 = 1;
+    printf("Ingrese el número de términos: ");
+    scanf("%d", &n);
+
+    printf("La serie de Fibonacci es:\n");
+    do {
+        f = f1 + f2;
+        f1 = f2;
+        f2 = f;
+        printf("%d ", f);
+        n--;
+    } while (n > 0);
+
+    return 0;
+}
